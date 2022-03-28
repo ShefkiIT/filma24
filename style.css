@@ -1,0 +1,26 @@
+h2 {color: darkgrey;}
+h1 {color: rgb(253, 5, 5);}
+body {background-color: rgb(82, 123, 255);}
+.njoftim {
+    padding: 8px;
+    background-color: #08a4c8;
+    color: white;
+    border-radius: 25px;
+    margin: auto;
+    font-size: 20px;
+}
+
+.footer {
+    margin-top: 137px;
+    background: linear-gradient(180deg, rgb(0 0 0 / 18%) 0%, rgba(0,0,0,0) 100%);
+    padding: 5px 0 5px 0;
+    border-top: solid 2px rgb(23, 89, 104);
+}
+
+.footer {
+    height: 100px;
+    width: 100%;
+    margin-top: 90px;
+}
+
+object-position: center top;
