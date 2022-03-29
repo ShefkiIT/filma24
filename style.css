@@ -4,7 +4,7 @@ h2 {
 h1 {
     color: rgb(241, 105, 42); 
 }
-body {background-color: rgb(14, 122, 113); box-shadow: 10px 5px 5px rgb(93, 170, 90);
+body {background-color: rgb(14, 122, 113); 
  }
 .njoftim {
     padding: 8px;
@@ -36,4 +36,4 @@ padding-left: 20px;
 
 }
 
- .search {padding-left: 1300px;}
+ .search {padding-left: 1000px;}
