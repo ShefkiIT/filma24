@@ -5,12 +5,137 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Filma24/7</title>
+    <style>
+
+/* For mobile phones: */
+[class*="col-"] {
+  width: 100%;
+}
+
+@media only screen and (min-width: 600px) {
+  /* For tablets: */
+  .col-s-1 {width: 8.33%;}
+  .col-s-2 {width: 16.66%;}
+  .col-s-3 {width: 25%;}
+  .col-s-4 {width: 33.33%;}
+  .col-s-5 {width: 41.66%;}
+  .col-s-6 {width: 50%;}
+  .col-s-7 {width: 58.33%;}
+  .col-s-8 {width: 66.66%;}
+  .col-s-9 {width: 75%;}
+  .col-s-10 {width: 83.33%;}
+  .col-s-11 {width: 91.66%;}
+  .col-s-12 {width: 100%;}
+}
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+}
+
+
+
+
+
+
+
+        //* Ndarje *//
+    .pagination {
+        display: inline-block;
+      }
+      
+      .pagination a {
+        color: rgb(70, 235, 139);
+        float: left;
+        padding: 8px 16px;
+        text-decoration: none;
+        transition: background-color .3s;
+        border: 1px solid rgb(196, 108, 8);
+      }
+      
+      .pagination a.active {
+        background-color: #ffc1c1;
+        color: rgb(255, 167, 167);
+        border: 1px solid #ffb7b7;
+      }
+      
+      .pagination a:hover:not(.active) {background-color: rgb(0, 145, 7);}
+    
+}
+      </style>
 </head>
+
 <body>
+    <style>
+        /* Style The Dropdown Button */
+        .dropbtn {
+          background-color: #4CAF50;
+          color: white;
+          padding: 16px;
+          font-size: 16px;
+          border: none;
+          cursor: pointer;
+        }
+        
+        /* The container <div> - needed to position the dropdown content */
+        .dropdown {
+          position: relative;
+          display: inline-block;
+        }
+        
+        /* Dropdown Content (Hidden by Default) */
+        .dropdown-content {
+          display: none;
+          position: absolute;
+          background-color: #f9f9f9;
+          min-width: 160px;
+          box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+          z-index: 1;
+        }
+        
+        /* Links inside the dropdown */
+        .dropdown-content a {
+          color: black;
+          padding: 12px 16px;
+          text-decoration: none;
+          display: block;
+        }
+        
+        /* Change color of dropdown links on hover */
+        .dropdown-content a:hover {background-color: #f1f1f1}
+        
+        /* Show the dropdown menu on hover */
+        .dropdown:hover .dropdown-content {
+          display: block;
+        }
+        
+        /* Change the background color of the dropdown button when the dropdown content is shown */
+        .dropdown:hover .dropbtn {
+          background-color: #3e8e41;
+        }
+        
+        
+
+        </style>
+        
+        
+
+
     <link rel="stylesheet" href="style.css">
-    
+    <link rel="stylesheet" href="script.js">
+    <div class="header">
     <center><h1 style="font-family:courier;"><b>Filma24/7</b></h1></center>
-    
+    </div>
     <br>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -21,38 +146,25 @@
         <button type="submit"><i class="fa fa-search"></i></button>
       </form>
 
-
-<table>
-    <tr>
-        <td></td>
-    <th><h2><img class="darkmode" src="ico_filma_blu.png"><a href="https://www.filma24.id/">Filma</a></h2></th>
-
-     <th><h2><img class="darkmode" src="ico_filma_blu.png"><a href="https://www.filma24.id/seriale/">Seriale</a></h2></th>
-     
-     <th><h2><img class="darkmode" src="ico_filma_blu.png"><a href="https://www.filma24.id/aksion/">Aksion</a></h2></th>
-
-     <th><h2><img class="darkmode" src="ico_filma_blu.png"><a href="https://www.filma24.id/komedi/">Komedi</a></h2></th>
-
-     <th><h2><img class="darkmode" src="ico_filma_blu.png"><a href="https://www.filma24.id/aventure/">Aventure</a></h2></th>
-
-     <th><h2><img class="darkmode" src="ico_filma_blu.png"><a href="https://www.filma24.id/drame/">Drame</a></h2></th>
-
-     <th><h2><img class="darkmode" src="ico_filma_blu.png"><a href="https://www.filma24.id/fantazi/">Fantazi</a></h2></th>
-
-     <th><h2><img class="darkmode" src="ico_filma_blu.png"><a href="https://www.filma24.id/horror/">Horror</a></h2></th>
-
-     <th><h2><img class="darkmode" src="ico_filma_blu.png"><a href="https://www.filma24.id/krim/">Krim</a></h2></th>
-
-     <th><h2><img class="darkmode" src="ico_filma_blu.png"><a href="https://www.filma24.id/lufte/">Lufte</a></h2></th>
-
-     <th><h2><img class="darkmode" src="ico_filma_blu.png"><a href="https://www.filma24.id/histori/">Histori</a></h2></th>
-
-     <th><h2><img class="darkmode" src="ico_filma_blu.png"><a href="https://www.filma24.id/thriller/">Thriller</a></h2></th>
-
-     <th><h2><img class="darkmode" src="ico_filma_blu.png"><a href="https://www.filma24.id/romance/">Romance</a></h2></th>
-     
-</tr>
-</table>
+<br>
+      <div class="dropdown">
+        <button class="dropbtn">Zhanri</button>
+        <div class="dropdown-content">
+          <a href="https://www.filma24.id/seriale/">Seriale</a>
+          <a href="https://www.filma24.id/aksion/">Aksion</a>
+          <a href="https://www.filma24.id/komedi/">Komedi</a>
+          <a href="https://www.filma24.id/aventure/">Aventure</a>
+          <a href="https://www.filma24.id/drame/">Drame</a>
+          <a href="https://www.filma24.id/fantazi/">Fantazi</a>
+          <a href="https://www.filma24.id/horror/">Horror</a>
+          <a href="https://www.filma24.id/krim/">Krim</a>
+          <a href="https://www.filma24.id/lufte/">Lufte</a>
+          <a href="https://www.filma24.id/histori/">Histori</a>
+          <a href="https://www.filma24.id/thriller/">Thriller</a>
+          <a href="https://www.filma24.id/romance/">Romance</a>
+        </div>
+      </div>
+<br>
 
 <br>
 <div class="njoftim">
@@ -131,20 +243,18 @@
 <br>
 
 
-<div class="custom-select" style="width:200px;">
-<button class="favorite styled"
-type="button"><a href="index.html">
-1
-</a>
-</button> 
+<div class="pagination" >
+    <a href="index.html">&laquo;</a>
+    <a href="index.html">1</a>
+    <a href="index1.html" class="active">2</a>
+    <a href="#">3</a>
+    <a href="#">4</a>
+    <a href="#">5</a>
+    <a href="#">6</a>
+    <a href="#">&raquo;</a>
+  </div>
 
-<button class="favorite styled"
-type="button"><a href="index1.html">
-2
-</a>
-</button> 
-</div>
-<br>
+
 <br><br>
 
 
