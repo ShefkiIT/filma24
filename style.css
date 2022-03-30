@@ -2,9 +2,9 @@ h2 {
     color: rgb(255, 78, 78);
 }
 h1 {
-    color: rgb(241, 105, 42); 
+    color: rgb(241, 105, 42); background-color: rgb(65, 63, 63);padding-top: 50px; min-height: 80px; border-bottom: #e8491d 5px solid;
 }
-body {background-color: rgb(14, 122, 113); 
+body {background-image: url(17.jpg);
  }
 .njoftim {
     padding: 8px;
@@ -37,3 +37,11 @@ padding-left: 20px;
 }
 
  .search {padding-left: 1000px;}
+
+
+ .footer {background-color: #3b3837;
+color: #e8491d;
+border-top: #e8491d 5px solid;
+}
+
+ 
