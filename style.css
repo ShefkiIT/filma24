@@ -9,6 +9,7 @@ h1 {
   width: 500px;
   height: 100px;
   text-shadow: 1px 1px;
+  position: relative;
 }
 body {background-image: url(17.jpg);
  }
@@ -83,3 +84,13 @@ border-top: #e8491d 5px solid;
       }
 
       
+
+      figcaption {
+        border: 2px solid rgb(153, 99, 17);
+        border-radius: 5px;
+        background-color: #000000;
+color: #ffffff;
+
+      }
+
+   

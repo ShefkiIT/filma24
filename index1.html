@@ -5,37 +5,293 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-</head>
-<body>
+    <style>
+
+        /* For mobile phones: */
+        [class*="col-"] {
+          width: 100%;
+        }
+        
+        @media only screen and (min-width: 600px) {
+          /* For tablets: */
+          .col-s-1 {width: 8.33%;}
+          .col-s-2 {width: 16.66%;}
+          .col-s-3 {width: 25%;}
+          .col-s-4 {width: 33.33%;}
+          .col-s-5 {width: 41.66%;}
+          .col-s-6 {width: 50%;}
+          .col-s-7 {width: 58.33%;}
+          .col-s-8 {width: 66.66%;}
+          .col-s-9 {width: 75%;}
+          .col-s-10 {width: 83.33%;}
+          .col-s-11 {width: 91.66%;}
+          .col-s-12 {width: 100%;}
+        }
+        @media only screen and (min-width: 768px) {
+          /* For desktop: */
+          .col-1 {width: 8.33%;}
+          .col-2 {width: 16.66%;}
+          .col-3 {width: 25%;}
+          .col-4 {width: 33.33%;}
+          .col-5 {width: 41.66%;}
+          .col-6 {width: 50%;}
+          .col-7 {width: 58.33%;}
+          .col-8 {width: 66.66%;}
+          .col-9 {width: 75%;}
+          .col-10 {width: 83.33%;}
+          .col-11 {width: 91.66%;}
+          .col-12 {width: 100%;}
+        }
+        
+        
+        
+        
+        
+        
+        
+                /* Ndarje */
+            .pagination {
+                display: inline-block;
+              }
+              
+              .pagination a {
+                color: rgb(70, 235, 139);
+                float: left;
+                padding: 8px 16px;
+                text-decoration: none;
+                transition: background-color .3s;
+                border: 1px solid rgb(196, 108, 8);
+              }
+              
+              .pagination a.active {
+                background-color: #ffc1c1;
+                color: rgb(255, 167, 167);
+                border: 1px solid #ffb7b7;
+              }
+              
+              .pagination a:hover:not(.active) {background-color: rgb(0, 145, 7);}
+            
+        
+              </style>
+        </head>
+        
+        <body>
+            <style>
+                /* Style The Dropdown Button */
+                .dropbtn {
+                  background-color: #4CAF50;
+                  color: white;
+                  padding: 16px;
+                  font-size: 16px;
+                  border: none;
+                  cursor: pointer;
+                }
+                
+                /* The container <div> - needed to position the dropdown content */
+                .dropdown {
+                  position: relative;
+                  display: inline-block;
+                }
+                
+                /* Dropdown Content (Hidden by Default) */
+                .dropdown-content {
+                  display: none;
+                  position: absolute;
+                  background-color: #f9f9f9;
+                  min-width: 160px;
+                  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                  z-index: 1;
+                }
+                
+                /* Links inside the dropdown */
+                .dropdown-content a {
+                  color: black;
+                  padding: 12px 16px;
+                  text-decoration: none;
+                  display: block;
+                }
+                
+                /* Change color of dropdown links on hover */
+                .dropdown-content a:hover {background-color: #f1f1f1}
+                
+                /* Show the dropdown menu on hover */
+                .dropdown:hover .dropdown-content {
+                  display: block;
+                }
+                
+                /* Change the background color of the dropdown button when the dropdown content is shown */
+                .dropdown:hover .dropbtn {
+                  background-color: #3e8e41;
+                }
+                
+                
+        
+                </style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="index.html">
-    
-    <center><h1><b>Filma24/7</b></h1></center>
-   
-    
+    <link rel="stylesheet" href="script.js">
 
 
-<div class="njoftim">
-    <span class="mbyllnjoftim" onclick="this.parentElement.style.display='none';"></span> 
-    <strong><center><b>FiLMA24/7</b> - Kjo Faqe Nuk Ka Perfunduar!!!</center></strong>
+
+
+    
+    <div class="header">
+    <center><h1 style="font-family:verdana;"><b>Filma24/7</b></h1></center>
     </div>
     <br>
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <form class="example" action="action_page.php">
+        <input type="text" placeholder="Search.." name="search">
+        <button type="submit"><i class="fa fa-search"></i></button>
+      </form>
+
+<br>
+
+
+
+ <div class="dropdown">
+        <button class="dropbtn">Zhanri</button>
+        <div class="dropdown-content">
+          <a href="https://www.filma24.id/seriale/">Seriale</a>
+          <a href="https://www.filma24.id/aksion/">Aksion</a>
+          <a href="https://www.filma24.id/komedi/">Komedi</a>
+          <a href="https://www.filma24.id/aventure/">Aventure</a>
+          <a href="https://www.filma24.id/drame/">Drame</a>
+          <a href="https://www.filma24.id/fantazi/">Fantazi</a>
+          <a href="https://www.filma24.id/horror/">Horror</a>
+          <a href="https://www.filma24.id/krim/">Krim</a>
+          <a href="https://www.filma24.id/lufte/">Lufte</a>
+          <a href="https://www.filma24.id/histori/">Histori</a>
+          <a href="https://www.filma24.id/thriller/">Thriller</a>
+          <a href="https://www.filma24.id/romance/">Romance</a>
+        </div>
+      </div>
+    
+<br>
+
+<br>
+<div class="njoftim">
+    <span class="mbyllnjoftim" onclick="this.parentElement.style.display='none';"></span> 
+    <strong><center><b>FiLMA24/7</b> - ADRESA JONE E RE!</center></strong>    
+</div>
 
     
-    <button class="favorite styled"
-    type="button"><a href="index.html">
-    1
-</a>
-    </button> 
-    
-    <button class="favorite styled"
-    type="button"><a href="index1.html">
-    2
-    </a>
-    </button> 
+
+<center>
+    <table>
+    <img   hspace="80" vspace="60">
     
     
+   <th> <a href="https://www.filma24.id/diabolik-2021-me-titra-shqip/"><img class="fit-picture" src="20.jpg" hspace="30" vspace="10" width="280" height="350"><figcaption>Diabolik (2021)</figcaption></a></th> 
+   <th><a href="https://www.filma24.id/the-extra-man-2010-filma-me-titra-shqip/"><img class="fit-picture" src="21jpeg.jpg" hspace="30" vspace="10" width="280" height="355"><figcaption>The extra man (2010)</figcaption></a> </th>
+    <th><a href="https://www.filma24.id/topside-2020-filma-me-titra-shqip/"><img class="fit-picture" src="22.jpg"  hspace="30" vspace="10" width="280" height="350"><figcaption>Topside (2020)</figcaption></a></th>
+       
+   
+    </table>
+       </center>
+
+        <br>
+
+
+            
+
+<center>
+    <table>
+        <img   hspace="80" vspace="60">
+        <th><a href="https://www.filma24.id/thunderbolt-1995-me-titra-shqip/"><img class="fit-picture" src="23.jpg"  hspace="30" vspace="10" width="280" height="350"><figcaption>Thunderbolt (1995)</figcaption></a></th>
+            <th><a href="https://www.filma24.id/moonfall-2022-filma-me-titra-shqip-kinema/"><img class="fit-picture" src="24.jpg" hspace="30" vspace="10" width="280" height="350"><figcaption>Moonfall (2022)</figcaption></a></th>
+            <th> <a href="https://www.filma24.id/a-shot-through-the-wall-2021-filma-me-titra-shqip/"><img class="fit-picture" src="25.jpg" hspace="30" vspace="10" width="280" height="350"><figcaption>A shoot throught the wall (2021)</figcaption></a></th>
+
+       </table> 
+       </center>
+           <br>
+
+<center>
+           <table>
+<img   hspace="80" vspace="60">
+
+<th> <a href="https://www.filma24.id/bullet-head-2017-me-titra-shqip/"><img class="fit-picture" src="26.jpg" hspace="30" vspace="10" width="280" height="350"><figcaption>Bullet Head (2017)</figcaption></a></th>
+    <th> <a href="https://www.filma24.id/the-secret-of-sinchanee-2021-me-titra-shqip/"><img class="fit-picture" src="27.jpg" hspace="30" vspace="10" width="280" height="350"><figcaption>The secret of sinchanee (2021)</figcaption></a></th>
+        <th> <a href="https://www.filma24.id/i-spy-2002-me-titra-shqip/"><img class="fit-picture" src="28.jpg" hspace="30" vspace="10" width="280" height="350"><figcaption>I spy (2002)</figcaption></a></th>
+            </center>
+</table>
+       <br>
+
+
+<center>
+       <table>
+       <img   hspace="80" vspace="60">
+       
+       <th> <a href="https://www.filma24.id/death-on-the-nile-2020-filma-me-titra-shqip/"><img class="fit-picture" src="29.jpg" hspace="30" vspace="10" width="280" height="350"><figcaption>Death on the nile (2020)</figcaption></a></th>
+        <th> <a href="https://www.filma24.id/the-weekend-away-2022-me-titra-shqip/"><img class="fit-picture" src="30.jpg" hspace="30" vspace="10" width="280" height="350"><figcaption>The weekend away (2022)</figcaption></a></th>
+            <th><a href="https://www.filma24.id/the-night-2020-filma-me-titra-shqip/"><img class="fit-picture" src="31.jpg" hspace="30" vspace="10" width="280" height="350"><figcaption>The night (2022)</figcaption></a></th>
+    </center>
+</table>
+
+<br>
+
+<center>
+<table>
+<img   hspace="80" vspace="60">
+
+<th> <a href="https://www.filma24.id/the-girl-on-the-mountain-2022-me-titra-shqip/"><img class="fit-picture" src="35.jpg" hspace="32" vspace="10" width="280" height="350"><figcaption>The Girl on the Mountain (2022)</figcaption></a></th>
+    <th><a href="https://www.filma24.id/after-we-fell-2021-filma-me-titra-shqip/"><img class="fit-picture" src="33.jpg" hspace="30" vspace="10" width="280" height="350"><figcaption>After We Fell</figcaption></a></th>
+        <th>  <a href="https://www.filma24.id/dont-look-up-2021-filma-netflix-me-titra-shqip/"><img class="fit-picture" src="34.jpg" hspace="30" vspace="10" width="280" height="350"><figcaption>Dont Look Up</figcaption></a></th>
+    </center>
+</table>
+
+
+
+<br>
+    <br>
+
+<br>
+
+
+<div class="pagination" >
+    <a href="index.html">&laquo;</a>
+    <a href="index.html">1</a>
+    <a href="index1.html">2</a>
+    <a href="#">3</a>
+    <a href="#">4</a>
+    <a href="#">5</a>
+    <a href="#">6</a>
+    <a href="#">&raquo;</a>
+  </div>
+
+
+<br><br>
+
+
+
+<hr size="3" color="lightgreen">
+<div class="image-container">
+
+<br><br><br>
+    <center> 
+        <a href="https://bit.ly/3Euwf2y" target="_blank" rel="noopener"><img src="10.jpg" style="border-radius: 7px; "></a> 
+        </center>
+
+
+
+
 
 
     
