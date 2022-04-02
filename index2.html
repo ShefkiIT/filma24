@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+      * {box-sizing: border-box;}
+      
+      body {
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      
+      .topnav {
+        overflow: hidden;
+        background-color: #e9e9e9;
+      }
+      
+      .topnav a {
+        float: left;
+        display: block;
+        color: black;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+      }
+      
+      .topnav a:hover {
+        background-color: #ddd;
+        color: black;
+      }
+      
+      .topnav a.active {
+        background-color: #2196F3;
+        color: white;
+      }
+      
+      .topnav .search-container {
+        float: right;
+      }
+      
+      .topnav input[type=text] {
+        padding: 6px;
+        margin-top: 8px;
+        font-size: 17px;
+        border: none;
+      }
+      
+      .topnav .search-container button {
+        float: right;
+        padding: 6px;
+        margin-top: 8px;
+        margin-right: 16px;
+        background: #ddd;
+        font-size: 17px;
+        border: none;
+        cursor: pointer;
+      }
+      
+      .topnav .search-container button:hover {
+        background: #ccc;
+      }
+      
+      @media screen and (max-width: 600px) {
+        .topnav .search-container {
+          float: none;
+        }
+        .topnav a, .topnav input[type=text], .topnav .search-container button {
+          float: none;
+          display: block;
+          text-align: left;
+          width: 100%;
+          margin: 0;
+          padding: 14px;
+        }
+        .topnav input[type=text] {
+          border: 1px solid #ccc;  
+        }
+      }
+      </style>
+    <title>Filma24/7</title>
+    <style>
+
+/* For mobile phones: */
+[class*="col-"] {
+  width: 100%;
+}
+
+@media only screen and (min-width: 600px) {
+  /* For tablets: */
+  .col-s-1 {width: 8.33%;}
+  .col-s-2 {width: 16.66%;}
+  .col-s-3 {width: 25%;}
+  .col-s-4 {width: 33.33%;}
+  .col-s-5 {width: 41.66%;}
+  .col-s-6 {width: 50%;}
+  .col-s-7 {width: 58.33%;}
+  .col-s-8 {width: 66.66%;}
+  .col-s-9 {width: 75%;}
+  .col-s-10 {width: 83.33%;}
+  .col-s-11 {width: 91.66%;}
+  .col-s-12 {width: 100%;}
+}
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+}
+
+
+
+
+
+
+
+        /* Ndarje */
+    .pagination {
+        display: inline-block;
+      }
+      
+      .pagination a {
+        color: rgb(70, 235, 139);
+        float: left;
+        padding: 8px 16px;
+        text-decoration: none;
+        transition: background-color .3s;
+        border: 1px solid rgb(196, 108, 8);
+      }
+      
+      .pagination a.active {
+        background-color: #ffc1c1;
+        color: rgb(255, 167, 167);
+        border: 1px solid #ffb7b7;
+      }
+      
+      .pagination a:hover:not(.active) {background-color: rgb(0, 145, 7);}
+    
+
+      </style>
+</head>
+
+<body>
+    <style>
+        /* Style The Dropdown Button */
+        .dropbtn {
+          background-color: #4CAF50;
+          color: white;
+          padding: 16px;
+          font-size: 16px;
+          border: none;
+          cursor: pointer;
+        }
+        
+        /* The container <div> - needed to position the dropdown content */
+        .dropdown {
+          position: relative;
+          display: inline-block;
+        }
+        
+        /* Dropdown Content (Hidden by Default) */
+        .dropdown-content {
+          display: none;
+          position: absolute;
+          background-color: #f9f9f9;
+          min-width: 160px;
+          box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+          z-index: 1;
+        }
+        
+        /* Links inside the dropdown */
+        .dropdown-content a {
+          color: black;
+          padding: 12px 16px;
+          text-decoration: none;
+          display: block;
+        }
+        
+        /* Change color of dropdown links on hover */
+        .dropdown-content a:hover {background-color: #f1f1f1}
+        
+        /* Show the dropdown menu on hover */
+        .dropdown:hover .dropdown-content {
+          display: block;
+        }
+        
+        /* Change the background color of the dropdown button when the dropdown content is shown */
+        .dropdown:hover .dropbtn {
+          background-color: #3e8e41;
+        }
+        
+        
+
+        </style>
+        
+        
+
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="script.js">
+<link rel="stylesheet" href="index.html">
+<link rel="stylesheet" href="index1.html">
+<link rel="stylesheet" href="about.html">
+
+
+  <div class="topnav">
+      <a class="active" href="https://shefkiit.github.io/filma24/">Home</a>
+      <a href="about.html">About Us</a>
+      
+      
+      
+      
+      <div class="search-container">
+        <form action="/action_page.php">
+          <input type="text" placeholder="Search.." name="search">
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+
+
+<br>
+     <center><a href="https://www.filma24.id/">
+      <img src="37.jpg" onmouseover="this.src='37.jpg'" onmouseout="this.src='37.jpg'" alt="logo">
+      </a></center>
+    <br>
+
+
+ <div class="dropdown">
+        <button class="dropbtn">Zhanri</button>
+        <div class="dropdown-content">
+          <a href="https://www.filma24.id/seriale/">Seriale</a>
+          <a href="https://www.filma24.id/aksion/">Aksion</a>
+          <a href="https://www.filma24.id/komedi/">Komedi</a>
+          <a href="https://www.filma24.id/aventure/">Aventure</a>
+          <a href="https://www.filma24.id/drame/">Drame</a>
+          <a href="https://www.filma24.id/fantazi/">Fantazi</a>
+          <a href="https://www.filma24.id/horror/">Horror</a>
+          <a href="https://www.filma24.id/krim/">Krim</a>
+          <a href="https://www.filma24.id/lufte/">Lufte</a>
+          <a href="https://www.filma24.id/histori/">Histori</a>
+          <a href="https://www.filma24.id/thriller/">Thriller</a>
+          <a href="https://www.filma24.id/romance/">Romance</a>
+        </div>
+      </div>
+    
+<br><br>
+
+<br>
+<div class="njoftim">
+    <span class="mbyllnjoftim" onclick="this.parentElement.style.display='none';"></span> 
+    <strong><center><b>FiLMA24/7</b> - ADRESA JONE E RE!</center></strong>    
+</div>
+<br>
+    
+<center> <a href="https://www.filma24.id/seriale/peaky-blinders/" rel="noopener"><img src="36.jpg" style="border-radius: 7px; "></a> </center>
+
+
+
+
+<center>
+    <table>
+    <img   hspace="80" vspace="60">
+    
+    
+   <th> <a href="https://www.filma24.id/rescued-by-ruby-2022-filma-me-titra-shqip-filma24/"><img class="fit-picture" src="38.jpg" hspace="30" vspace="10" width="280" height="350"><figcaption>Rescued by Ruby (2022)</figcaption></a></th> 
+   <th><a href="https://www.filma24.id/zola-2020-filma-me-titra-shqip/"><img class="fit-picture" src="39.jpg" hspace="30" vspace="10" wwidth="280" height="350"><figcaption>Zola (2020)</figcaption></a> </th>
+    <th><a href="https://www.filma24.id/1000-miles-from-christmas-2021-filma-netflix-me-titra-shqip/"><img class="fit-picture" src="40.jpg"  hspace="30" vspace="10" width="280" height="350"><figcaption>1000 Miles from Christmas </figcaption></a></th>
+       
+   
+    </table>
+       </center>
+
+        <br>
+
+
+            
+
+<center>
+    <table>
+        <img   hspace="80" vspace="60">
+        <th><a href="https://www.filma24.id/mobile-suit-gundam-hathaway-2021-me-titra-shqip/"><img class="fit-picture" src="41.jpg"  hspace="30" vspace="10" width="280" height="350"><figcaption>Mobile Suit Gundam: Hathaway</figcaption></a></th>
+            <th><a href="https://www.filma24.id/eight-for-silver-2021-a-k-a-the-cursed-filma-me-titra-shqip/"><img class="fit-picture" src="42.jpg" hspace="30" vspace="10" width="280" height="350"><figcaption>Eight for Silver (2021)</figcaption></a></th>
+            <th> <a href="https://www.filma24.id/a-house-on-the-bayou-2021-me-titra-shqip/"><img class="fit-picture" src="43.jpg" hspace="30" vspace="10" width="280" height="350"><figcaption>A House on the Bayou (2020)</figcaption></a></th>
+
+       </table> 
+       </center>
+           <br>
+
+<center>
+           <table>
+<img   hspace="80" vspace="60">
+
+<th> <a href="https://www.filma24.id/city-hunter-2019-a-k-a-nicky-larson-et-le-parfum-de-cupidon-filma-me-titra-shqip/"><img class="fit-picture" src="44.jpg" hspace="30" vspace="10" width="280" height="350"><figcaption>City Hunter (2019)</figcaption></a></th>
+    <th> <a href="https://www.filma24.id/panama-2022-filma-me-titra-shqip/"><img class="fit-picture" src="45.jpeg" hspace="30" vspace="10" width="280" height="350"><figcaption>Panama (2022)</figcaption></a></th>
+        <th> <a href="https://www.filma24.id/golden-men-2019-a-k-a-gli-uomini-doro-filma-me-titra-shqip/"><img class="fit-picture" src="46.jpg" hspace="30" vspace="10" width="280" height="350"><figcaption>Golden Men (2019)</figcaption></a></th>
+            </center>
+</table>
+       <br>
+
+
+<center>
+       <table>
+       <img   hspace="80" vspace="60">
+       
+       <th> <a href="https://www.filma24.id/iron-will-1994-filma-me-titra-shqip/"><img class="fit-picture" src="48.jpg" hspace="30" vspace="10" width="280" height="350"><figcaption>Iron Will (1994)</figcaption></a></th>
+        <th> <a href="https://www.filma24.id/a-journal-for-jordan-2021-filma-me-titra-shqip/"><img class="fit-picture" src="49.jpg" hspace="30" vspace="10" width="280" height="350"><figcaption>A Journal for Jordan (2021)</figcaption></a></th>
+            <th><a href="https://www.filma24.id/money-trap-2019-a-k-a-organize-isler-sazan-sarmali-filma-me-titra-shqip/"><img class="fit-picture" src="50.jpg" hspace="30" vspace="10" width="280" height="350"><figcaption>Money Trap (2019) </figcaption></a></th>
+    </center>
+</table>
+
+<br>
+
+<center>
+<table>
+<img   hspace="80" vspace="60">
+
+<th> <a href="https://www.filma24.id/pirates-ii-stagnettis-revenge-2008-18-filma-erotik-shqip/"><img class="fit-picture" src="51.jpg" hspace="30" vspace="10" width="280" height="350"><figcaption>Pirates II: Stagnetti’s Revenge</figcaption></a></th>
+    <th><a href="https://www.filma24.id/jackass-forever-2022-me-titra-shqip/"><img class="fit-picture" src="52.jpg" hspace="30" vspace="10" width="280" height="350"><figcaption>Jackass Forever (2022)</figcaption></a></th>
+        <th>  <a href="https://www.filma24.id/deep-water-2022-filma-me-titra-shqip/"><img class="fit-picture" src="53.jpg" hspace="30" vspace="10" width="280" height="350"><figcaption>Deep Water (2022)</figcaption></a></th>
+    </center>
+</table>
+
+
+
+<br>
+    <br>
+
+<br>
+
+
+<div class="pagination">
+    <a href="index1.html">&laquo;</a>
+    <a href="index.html">1</a>
+    <a href="index1.html">2</a>
+    <a href="index2.html">3</a>
+    <a href="#">4</a>
+    <a href="#">5</a>
+    <a href="#">6</a>
+    <a href="#">&raquo;</a>
+  </div>
+
+
+<br><br>
+
+
+
+<hr size="3" color="lightgreen">
+<div class="image-container">
+
+<br><br><br>
+    <center> 
+        <a href="https://bit.ly/3Euwf2y" target="_blank" rel="noopener"><img src="10.jpg" style="border-radius: 7px; "></a> 
+        </center>
+
+     
+<div class="footer">
+    <div class="footer-info"> <span class="copyright">
+            <p>Copyright ©  2022 | FILMA24/7- Filma dhe Seriale HD me titra shqip</p>
+          
+        </span> <span class="sitemaps"> <a href="/privacy-policy.htm" target="_blank">Privacy Policy &nbsp;&nbsp;</a> <a href="/DMCA.htm" target="_blank">DMCA &nbsp;&nbsp;</a> </span> </div>
+</div>
+
+
+</body>
+</html>
