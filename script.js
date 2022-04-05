@@ -25,3 +25,9 @@ function myFunction() {
   source.onmessage = function(event) {
     document.getElementById("result").innerHTML += event.data + "<br>";
   };
+
+
+  @media (max-width: 1200px)
+.player, {
+    width: 650px !important;
+}
